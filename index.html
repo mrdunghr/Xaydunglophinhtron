@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp hình tròn</title>
+</head>
+<body>
+</body>
+<script>
+  let Circle = function(radius){
+      this.radius = radius;
+
+      this.getRadius = function (){
+          return radius;
+      }
+
+      this.getArea = function (){
+          return 3.14 * radius * radius;
+      }
+  }
+
+  let circle = new Circle(7) // đã test trên bán kính 4 5 6 7
+  let darius = circle.getRadius()
+  let area = circle.getArea()
+  console.log(darius)
+  console.log(area)
+</script>
+</html>
